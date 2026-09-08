@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Área de membros do Mapa da Saúde de Elaine Talita.">
+  <title>Mapa da Saúde | Área de Membros</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <style>
+    :root{--ink:#26383b;--muted:#667574;--sage:#607b73;--sage2:#dce8e3;--cream:#f7f2e9;--gold:#c99b62;--white:#fff;--danger:#9f3f3f;--shadow:0 22px 55px rgba(38,56,59,.12)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"DM Sans",sans-serif;color:var(--ink);background:linear-gradient(140deg,#f8f4ed,#eef5f1 65%,#f8f4ed);min-height:100vh}
+    button,input,textarea,select{font:inherit}button{cursor:pointer}.hidden{display:none!important}
+    .shell{width:min(1120px,calc(100% - 32px));margin:auto}.top{height:78px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;gap:12px;align-items:center;color:inherit;text-decoration:none}.mark{width:44px;height:44px;border:1px solid rgba(96,123,115,.35);border-radius:50%;display:grid;place-items:center;color:var(--sage);font-family:"Playfair Display";font-size:24px}.brand strong{display:block;font-family:"Playfair Display";font-size:20px}.brand small{color:var(--muted);letter-spacing:.08em;text-transform:uppercase}.back{color:var(--sage);font-weight:600;text-decoration:none}.logout{border:0;background:transparent;color:var(--muted);font-weight:600}
+    .card{background:rgba(255,255,255,.92);border:1px solid rgba(96,123,115,.15);border-radius:28px;box-shadow:var(--shadow)}
+    .login{max-width:620px;margin:32px auto 70px;padding:48px}.eyebrow{color:var(--gold);font-weight:700;letter-spacing:.09em;text-transform:uppercase;font-size:12px}.login h1,.hero h1{font-family:"Playfair Display";font-size:clamp(38px,6vw,62px);line-height:1.02;margin:12px 0 16px}.lead{font-size:17px;color:var(--muted);line-height:1.65}.tabs{display:flex;gap:8px;background:#eef2f0;padding:5px;border-radius:14px;margin:28px 0 22px}.tab{flex:1;border:0;border-radius:10px;padding:12px;background:transparent;color:var(--muted);font-weight:700}.tab.active{background:white;color:var(--ink);box-shadow:0 5px 16px rgba(38,56,59,.08)}
+    label{display:block;font-weight:700;font-size:14px;margin:15px 0 7px}.field{width:100%;border:1px solid #ccd8d3;border-radius:13px;padding:14px 15px;background:white;color:var(--ink);outline:none}.field:focus{border-color:var(--sage);box-shadow:0 0 0 3px rgba(96,123,115,.12)}textarea.field{min-height:105px;resize:vertical}.btn{border:0;border-radius:13px;padding:14px 18px;background:var(--ink);color:white;font-weight:700;display:inline-flex;justify-content:center;align-items:center;gap:8px}.btn.full{width:100%;margin-top:16px}.btn.secondary{background:var(--sage)}.btn.ghost{background:transparent;color:var(--sage);border:1px solid #b9cbc4}.note{font-size:13px;line-height:1.55;color:var(--muted);margin-top:16px}.alert{padding:13px 15px;border-radius:12px;margin:14px 0;font-size:14px;background:#f8ecec;color:var(--danger)}
+    #googleButton{min-height:44px;display:flex;justify-content:center}.code-row{display:grid;grid-template-columns:1fr 140px;gap:10px}
+    .hero{padding:50px 0 28px;display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:end}.hero h1{font-size:clamp(40px,5vw,68px)}.status-card{padding:26px;background:var(--ink);color:white;border-radius:24px}.status-card span{display:block;color:#bcd0c8;font-size:13px}.status-card strong{display:block;font-family:"Playfair Display";font-size:26px;margin-top:5px}.progress{height:8px;background:rgba(255,255,255,.14);border-radius:8px;margin-top:16px;overflow:hidden}.progress i{display:block;height:100%;background:var(--gold);width:20%}
+    .section{padding:28px 0 70px}.section h2{font-family:"Playfair Display";font-size:36px;margin:0 0 10px}.section-intro{color:var(--muted);margin:0 0 24px}.videos{display:grid;grid-template-columns:1fr 1fr;gap:22px}.video{overflow:hidden}.video-frame{aspect-ratio:16/9;background:linear-gradient(145deg,#26383b,#46615e);display:grid;place-items:center;color:white;text-align:center;padding:25px}.play{width:62px;height:62px;border-radius:50%;background:rgba(255,255,255,.13);display:grid;place-items:center;font-size:25px;margin:auto auto 12px}.video-body{padding:22px}.video h3{font-family:"Playfair Display";font-size:25px;margin:0 0 8px}.video p{color:var(--muted);line-height:1.55;margin:0}.question-cta{margin-top:28px;padding:30px;display:flex;align-items:center;justify-content:space-between;gap:20px;background:var(--cream)}.question-cta h3{font-family:"Playfair Display";font-size:28px;margin:0 0 7px}.question-cta p{margin:0;color:var(--muted)}
+    .form-card{max-width:860px;margin:22px auto 70px;padding:42px}.form-head{border-bottom:1px solid #dfe7e3;padding-bottom:20px;margin-bottom:25px}.form-head h1{font-family:"Playfair Display";font-size:42px;margin:8px 0}.q{padding:18px 0;border-bottom:1px solid #edf0ef}.q:last-of-type{border-bottom:0}.q label{font-size:16px;margin-top:0}.q small{display:block;color:var(--muted);margin-bottom:10px}.actions{display:flex;justify-content:space-between;align-items:center;margin-top:25px}.success{max-width:720px;margin:45px auto 80px;padding:50px;text-align:center}.success-icon{width:78px;height:78px;border-radius:50%;background:var(--sage2);display:grid;place-items:center;margin:auto;color:var(--sage);font-size:36px}.success h1{font-family:"Playfair Display";font-size:43px;margin:20px 0 12px}.success p{color:var(--muted);font-size:17px;line-height:1.65}.footer{padding:25px 0 38px;text-align:center;color:var(--muted);font-size:13px}
+    .materials{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:20px 0 30px}.material{padding:22px}.material h3{margin:5px 0 8px;font-family:"Playfair Display"}.material p{color:var(--muted);line-height:1.5}.admin-wrap{padding:35px 0 70px}.admin-head{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:24px}.admin-head h1{font-family:"Playfair Display";font-size:48px;margin:6px 0}.admin-tabs{display:flex;gap:8px;margin-bottom:22px;flex-wrap:wrap}.admin-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.admin-card{padding:25px}.admin-card h2{font-family:"Playfair Display";margin:0 0 15px}.table-wrap{overflow:auto}.data-table{width:100%;border-collapse:collapse;font-size:13px}.data-table th,.data-table td{text-align:left;padding:11px;border-bottom:1px solid #e2e8e5;vertical-align:top}.data-table th{color:var(--muted);font-size:11px;text-transform:uppercase}.pill{display:inline-block;padding:5px 9px;border-radius:20px;background:var(--sage2);font-size:11px;font-weight:700}.answer-box{background:#f5f7f6;padding:12px;border-radius:10px;margin:8px 0;white-space:pre-wrap}.wide{grid-column:1/-1}
+    @media(max-width:760px){.top{height:68px}.brand small{display:none}.login,.form-card,.success{padding:28px 22px}.hero{grid-template-columns:1fr;padding-top:28px}.videos,.admin-grid{grid-template-columns:1fr}.question-cta,.admin-head{align-items:flex-start;flex-direction:column}.code-row{grid-template-columns:1fr}.back{font-size:13px}.wide{grid-column:auto}}
+  </style>
+</head>
+<body>
+  <header class="shell top">
+    <a class="brand" href="../"><span class="mark">E</span><span><strong>Elaine Talita</strong><small>Mapa da Saúde</small></span></a>
+    <div><button class="logout hidden" id="logoutBtn">Sair</button><a class="back" id="siteLink" href="../">Voltar ao site</a></div>
+  </header>
+
+  <main>
+    <section id="loginView" class="shell">
+      <div class="card login">
+        <div class="eyebrow">Área exclusiva</div>
+        <h1>Bem-vinda ao seu Mapa da Saúde.</h1>
+        <p class="lead">Entre usando o mesmo e-mail que foi cadastrado pela Elaine. Seu acesso só será liberado quando esse e-mail estiver autorizado.</p>
+        <div class="tabs"><button class="tab active" data-tab="google">Conta Google</button><button class="tab" data-tab="email">Outro e-mail</button></div>
+        <div id="loginAlert" class="alert hidden"></div>
+        <div id="googlePane">
+          <label>Entrar com sua conta Google</label>
+          <div id="googleButton"></div>
+          <p class="note">Use a conta Google com o mesmo e-mail cadastrado pela Elaine.</p>
+        </div>
+        <div id="emailPane" class="hidden">
+          <label for="emailInput">E-mail cadastrado</label>
+          <input id="emailInput" class="field" type="email" autocomplete="email" placeholder="voce@exemplo.com">
+          <button id="sendCodeBtn" class="btn full">Receber código de acesso</button>
+          <div id="codeBox" class="hidden">
+            <label for="codeInput">Código recebido por e-mail</label>
+            <div class="code-row"><input id="codeInput" class="field" inputmode="numeric" maxlength="6" placeholder="000000"><button id="verifyCodeBtn" class="btn secondary">Confirmar</button></div>
+          </div>
+          <p class="note">Para contas Yahoo, Outlook ou outros provedores. O código expira em 10 minutos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="memberView" class="hidden">
+      <div class="shell hero">
+        <div><div class="eyebrow">Sua jornada começa aqui</div><h1>Olá, <span id="memberName">bem-vinda</span>.</h1><p class="lead">Assista aos dois vídeos de orientação e depois preencha o questionário inicial. Suas respostas serão analisadas pela Elaine antes do contato para agendamento.</p></div>
+        <div class="status-card"><span>Status do questionário</span><strong id="questionStatus">Não iniciado</strong><div class="progress"><i id="progressBar"></i></div></div>
+      </div>
+      <div class="shell section">
+        <h2>Primeiros passos</h2><p class="section-intro">Estes conteúdos preparam você para aproveitar melhor o Mapa da Saúde.</p>
+        <div class="videos">
+          <article class="card video"><div class="video-frame" id="video1"><div><div class="play">▶</div><strong>Vídeo em preparação</strong></div></div><div class="video-body"><div class="eyebrow">Vídeo 1</div><h3>Boas-vindas da Elaine</h3><p>Apresentação, acolhimento e uma visão geral do cuidado individualizado.</p></div></article>
+          <article class="card video"><div class="video-frame" id="video2"><div><div class="play">▶</div><strong>Vídeo em preparação</strong></div></div><div class="video-body"><div class="eyebrow">Vídeo 2</div><h3>Como funciona o Mapa</h3><p>Orientações sobre o questionário, análise e próximos passos até o encontro com a Elaine.</p></div></article>
+        </div>
+        <div class="card question-cta"><div><h3>Questionário inicial</h3><p>Reserve cerca de 10 minutos e responda com calma.</p></div><button id="startQuestionBtn" class="btn">Preencher questionário</button></div>
+        <h2 style="margin-top:42px">Seus materiais</h2><p class="section-intro">Conteúdos disponibilizados pela Elaine especialmente para você.</p><div id="memberMaterials" class="materials"></div>
+      </div>
+    </section>
+
+    <section id="adminView" class="shell admin-wrap hidden">
+      <div class="admin-head"><div><div class="eyebrow">Painel administrativo</div><h1>Controle do Mapa</h1><p class="lead">Pacientes, questionários e materiais em um só lugar.</p></div><button id="previewPatientBtn" class="btn ghost">Visualizar como paciente</button></div>
+      <div id="adminAlert" class="alert hidden"></div>
+      <div class="admin-grid">
+        <form id="patientForm" class="card admin-card"><h2>Liberar paciente</h2><input type="hidden" id="patientOriginalEmail"><label>Nome</label><input class="field" id="patientName" required><label>E-mail</label><input class="field" id="patientEmail" type="email" required><label>Telefone</label><input class="field" id="patientPhone"><label>Acesso</label><select class="field" id="patientAccess"><option>Liberado</option><option>Não liberado</option></select><button class="btn full">Salvar paciente</button></form>
+        <form id="materialForm" class="card admin-card"><h2>Adicionar material</h2><input type="hidden" id="materialId"><label>Título</label><input class="field" id="materialTitle" required><label>Descrição</label><textarea class="field" id="materialDescription"></textarea><label>Link do material</label><input class="field" id="materialUrl" type="url" required><label>Disponibilizar para</label><select class="field" id="materialTarget"><option value="todos">Todos os pacientes</option></select><label>Status</label><select class="field" id="materialActive"><option>Sim</option><option>Não</option></select><button class="btn full">Salvar material</button></form>
+        <div class="card admin-card wide"><h2>Pacientes e respostas</h2><div class="table-wrap"><table class="data-table"><thead><tr><th>Paciente</th><th>Contato</th><th>Acesso</th><th>Questionário</th><th>Ações</th></tr></thead><tbody id="patientsBody"></tbody></table></div><div id="answersPanel"></div></div>
+        <div class="card admin-card wide"><h2>Materiais cadastrados</h2><div id="adminMaterials" class="materials"></div></div>
+      </div>
+    </section>
+
+    <section id="questionView" class="shell hidden">
+      <form id="healthForm" class="card form-card">
+        <div class="form-head"><div class="eyebrow">Versão inicial para validação</div><h1>Questionário do Mapa da Saúde</h1><p class="lead">Estas perguntas são informativas e não substituem consulta, diagnóstico ou atendimento de urgência.</p></div>
+        <div class="q"><label for="objetivo">1. Qual é o principal objetivo que trouxe você até o Mapa da Saúde?</label><textarea class="field" id="objetivo" required></textarea></div>
+        <div class="q"><label for="queixas">2. Quais são suas principais queixas ou sintomas atualmente?</label><small>Conte quando começaram, frequência e o que parece piorar ou melhorar.</small><textarea class="field" id="queixas" required></textarea></div>
+        <div class="q"><label for="digestivos">3. Como está sua saúde digestiva?</label><small>Ex.: azia, refluxo, gases, inchaço, intestino preso ou solto.</small><textarea class="field" id="digestivos"></textarea></div>
+        <div class="q"><label for="energia">4. Como estão sua energia e seu sono?</label><textarea class="field" id="energia"></textarea></div>
+        <div class="q"><label for="relacao">5. Como você descreve sua relação com a alimentação?</label><small>Ex.: fome emocional, ansiedade, compulsão, culpa, restrição ou tranquilidade.</small><textarea class="field" id="relacao"></textarea></div>
+        <div class="q"><label for="rotina">6. Como costuma ser sua rotina alimentar em um dia comum?</label><textarea class="field" id="rotina"></textarea></div>
+        <div class="q"><label for="historico">7. Existe algum diagnóstico, cirurgia ou condição de saúde importante no seu histórico?</label><textarea class="field" id="historico"></textarea></div>
+        <div class="q"><label for="medicamentos">8. Usa medicamentos ou suplementos atualmente?</label><textarea class="field" id="medicamentos"></textarea></div>
+        <div class="q"><label for="exames">9. Possui exames recentes? Quais?</label><textarea class="field" id="exames"></textarea></div>
+        <div class="q"><label for="restricoes">10. Possui alergias, intolerâncias ou restrições alimentares?</label><textarea class="field" id="restricoes"></textarea></div>
+        <div class="q"><label for="expectativas">11. O que você espera compreender ou conquistar com o Mapa da Saúde?</label><textarea class="field" id="expectativas" required></textarea></div>
+        <label style="font-weight:500;display:flex;gap:10px;align-items:flex-start"><input type="checkbox" id="consent" required style="margin-top:4px">Confirmo que as informações são verdadeiras e autorizo o envio à Elaine para análise e contato.</label>
+        <div id="formAlert" class="alert hidden"></div>
+        <div class="actions"><button type="button" id="cancelFormBtn" class="btn ghost">Voltar</button><button type="submit" class="btn" id="submitBtn">Enviar respostas</button></div>
+      </form>
+    </section>
+
+    <section id="successView" class="shell hidden"><div class="card success"><div class="success-icon">✓</div><h1>Respostas enviadas.</h1><p>Obrigada por preencher o questionário. A Elaine receberá suas respostas e entrará em contato para combinar o dia do encontro do seu Mapa da Saúde.</p><button class="btn secondary" id="returnMemberBtn">Voltar para a área de membros</button></div></section>
+  </main>
+  <footer class="footer shell">© <span id="year"></span> Elaine Talita · As informações desta área não substituem consulta profissional.</footer>
+
+  <script>
+  const API_URL = 'https://script.google.com/macros/s/AKfycbxFGZNXeVzhFHFD_-erFJLIk4MoGItJZc2yBRo5i8_J8lvsF6JZ4aaUkAYBF8FLZ_mO/exec';
+  const state={session:localStorage.getItem('mapa_session')||'',user:null,config:null,materials:[],admin:null,preview:false};
+  const $=s=>document.querySelector(s); const $$=s=>[...document.querySelectorAll(s)];
+  $('#year').textContent=new Date().getFullYear();
+  function view(id){['loginView','memberView','questionView','successView','adminView'].forEach(v=>$('#'+v).classList.toggle('hidden',v!==id));$('#logoutBtn').classList.toggle('hidden',id==='loginView');$('#siteLink').classList.toggle('hidden',id!=='loginView');scrollTo({top:0,behavior:'smooth'})}
+  function alertBox(id,msg){const el=$(id);el.textContent=msg;el.classList.toggle('hidden',!msg)}
+  async function api(action,data={}){if(API_URL.startsWith('COLE_'))throw new Error('A plataforma ainda está em configuração.');const res=await fetch(API_URL,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({action,...data})});const out=await res.json();if(!out.ok)throw new Error(out.error||'Não foi possível concluir.');return out}
+  function materialCards(items,admin){return items.length?items.map(m=>`<article class="card material"><div class="eyebrow">${m.target==='todos'?'Para todos':esc(m.target)} · ${m.active||'Sim'}</div><h3>${esc(m.title)}</h3><p>${esc(m.description||'Material disponibilizado pela Elaine.')}</p><a class="btn secondary" href="${safeUrl(m.url)}" target="_blank" rel="noopener">Abrir material</a>${admin?` <button class="btn ghost edit-material" data-id="${esc(m.id)}">Editar</button>`:''}</article>`).join(''):'<p class="note">Nenhum material disponível ainda.</p>'}
+  function renderMemberMaterials(){const items=state.preview&&state.admin?state.admin.materials.filter(m=>m.active==='Sim'&&m.target==='todos'):state.materials;$('#memberMaterials').innerHTML=materialCards(items,false)}
+  async function setUser(out){state.session=out.session;state.user=out.user;state.materials=out.materials||[];localStorage.setItem('mapa_session',out.session);if(out.user.role==='admin'){await loadAdmin();return}$('#memberName').textContent=(out.user.name||'bem-vinda').split(' ')[0];$('#questionStatus').textContent=out.user.questionStatus||'Não iniciado';$('#progressBar').style.width=out.user.questionStatus==='Enviado'?'100%':'20%';$('#startQuestionBtn').textContent=out.user.questionStatus==='Enviado'?'Atualizar respostas':'Preencher questionário';renderMemberMaterials();view('memberView')}
+  const esc=v=>String(v||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const safeUrl=v=>/^https?:\/\//i.test(String(v||''))?esc(v):'#';
+  async function loadAdmin(){const out=await api('adminDashboard',{session:state.session});state.admin=out;renderAdmin();view('adminView')}
+  function renderAdmin(){const a=state.admin;$('#patientsBody').innerHTML=a.patients.map((p,i)=>`<tr><td><strong>${esc(p.name)}</strong><br><small>${esc(p.id)}</small></td><td>${esc(p.email)}<br>${esc(p.phone)}</td><td><span class="pill">${esc(p.access)}</span></td><td>${esc(p.questionStatus)}<br><small>${esc(p.submittedAt)}</small></td><td><button class="btn ghost edit-patient" data-i="${i}">Editar</button> <button class="btn ghost see-answer" data-i="${i}">Respostas</button></td></tr>`).join('')||'<tr><td colspan="5">Nenhum paciente cadastrado.</td></tr>';$('#materialTarget').innerHTML='<option value="todos">Todos os pacientes</option>'+a.patients.map(p=>`<option value="${esc(p.email)}">${esc(p.name)} — ${esc(p.email)}</option>`).join('');$('#adminMaterials').innerHTML=materialCards(a.materials,true);bindAdminButtons()}
+  function bindAdminButtons(){$$('.edit-patient').forEach(b=>b.onclick=()=>{const p=state.admin.patients[+b.dataset.i];$('#patientOriginalEmail').value=p.email;$('#patientName').value=p.name;$('#patientEmail').value=p.email;$('#patientPhone').value=p.phone;$('#patientAccess').value=p.access;scrollTo({top:180,behavior:'smooth'})});$$('.see-answer').forEach(b=>b.onclick=()=>{const p=state.admin.patients[+b.dataset.i];const labels={objetivo:'Objetivo principal',queixas:'Queixas atuais',digestivos:'Sintomas digestivos',energia:'Energia e sono',relacao:'Relação com a alimentação',rotina:'Rotina alimentar',historico:'Histórico de saúde',medicamentos:'Medicamentos e suplementos',exames:'Exames recentes',restricoes:'Restrições ou alergias',expectativas:'Expectativas'};$('#answersPanel').innerHTML=`<h3>Respostas de ${esc(p.name)}</h3>`+Object.keys(labels).map(k=>`<div class="answer-box"><strong>${labels[k]}</strong><br>${esc(p.answers[k]||'Não informado')}</div>`).join('')});$$('.edit-material').forEach(b=>b.onclick=()=>{const m=state.admin.materials.find(x=>x.id===b.dataset.id);$('#materialId').value=m.id;$('#materialTitle').value=m.title;$('#materialDescription').value=m.description;$('#materialUrl').value=m.url;$('#materialTarget').value=m.target;$('#materialActive').value=m.active;scrollTo({top:180,behavior:'smooth'})})}
+  async function boot(){try{const out=await api('config');state.config=out;if(out.clientId){google.accounts.id.initialize({client_id:out.clientId,callback:handleGoogle});google.accounts.id.renderButton($('#googleButton'),{theme:'outline',size:'large',width:320,text:'continue_with',shape:'pill'});}else{$('#googleButton').innerHTML='<p class="note">Login Google será ativado após a configuração do domínio. Use a opção “Outro e-mail” por enquanto.</p>'}if(state.session){setUser(await api('validateSession',{session:state.session}));}}catch(e){if(state.session){localStorage.removeItem('mapa_session');state.session='';}if(!API_URL.startsWith('COLE_'))alertBox('#loginAlert',e.message)}}
+  async function handleGoogle(response){try{alertBox('#loginAlert','');setUser(await api('googleLogin',{credential:response.credential}));}catch(e){alertBox('#loginAlert',e.message)}}
+  $$('.tab').forEach(b=>b.onclick=()=>{$$('.tab').forEach(x=>x.classList.toggle('active',x===b));$('#googlePane').classList.toggle('hidden',b.dataset.tab!=='google');$('#emailPane').classList.toggle('hidden',b.dataset.tab!=='email');alertBox('#loginAlert','')});
+  $('#sendCodeBtn').onclick=async()=>{try{const email=$('#emailInput').value.trim();if(!email)throw new Error('Informe seu e-mail.');$('#sendCodeBtn').disabled=true;await api('requestCode',{email});$('#codeBox').classList.remove('hidden');alertBox('#loginAlert','Código enviado. Verifique sua caixa de entrada e spam.');}catch(e){alertBox('#loginAlert',e.message)}finally{$('#sendCodeBtn').disabled=false}};
+  $('#verifyCodeBtn').onclick=async()=>{try{setUser(await api('verifyCode',{email:$('#emailInput').value.trim(),code:$('#codeInput').value.trim()}));}catch(e){alertBox('#loginAlert',e.message)}};
+  $('#logoutBtn').onclick=()=>{state.session='';state.user=null;state.admin=null;state.preview=false;localStorage.removeItem('mapa_session');view('loginView')};
+  $('#previewPatientBtn').onclick=()=>{state.preview=true;$('#memberName').textContent='paciente';$('#questionStatus').textContent='Não iniciado';$('#progressBar').style.width='20%';$('#startQuestionBtn').classList.add('hidden');renderMemberMaterials();view('memberView');const back=document.createElement('button');back.id='backAdminFloating';back.className='btn';back.textContent='Voltar ao painel administrativo';back.style.cssText='position:fixed;right:18px;bottom:18px;z-index:20';back.onclick=()=>{back.remove();state.preview=false;$('#startQuestionBtn').classList.remove('hidden');view("adminView")};document.body.appendChild(back)};
+  $('#patientForm').onsubmit=async e=>{e.preventDefault();try{await api('adminSaveMember',{session:state.session,patient:{name:$('#patientName').value,email:$('#patientEmail').value,phone:$('#patientPhone').value,access:$('#patientAccess').value}});e.target.reset();await loadAdmin();alertBox('#adminAlert','Paciente salvo com sucesso.')}catch(err){alertBox('#adminAlert',err.message)}};
+  $('#materialForm').onsubmit=async e=>{e.preventDefault();try{await api('adminSaveMaterial',{session:state.session,material:{id:$('#materialId').value,title:$('#materialTitle').value,description:$('#materialDescription').value,url:$('#materialUrl').value,target:$('#materialTarget').value,active:$('#materialActive').value}});e.target.reset();$('#materialId').value='';await loadAdmin();alertBox('#adminAlert','Material salvo com sucesso.')}catch(err){alertBox('#adminAlert',err.message)}};
+  $('#startQuestionBtn').onclick=()=>view('questionView');$('#cancelFormBtn').onclick=()=>view('memberView');$('#returnMemberBtn').onclick=()=>view('memberView');
+  $('#healthForm').onsubmit=async e=>{e.preventDefault();try{alertBox('#formAlert','');$('#submitBtn').disabled=true;const answers={objetivo:$('#objetivo').value.trim(),queixas:$('#queixas').value.trim(),digestivos:$('#digestivos').value.trim(),energia:$('#energia').value.trim(),relacao:$('#relacao').value.trim(),rotina:$('#rotina').value.trim(),historico:$('#historico').value.trim(),medicamentos:$('#medicamentos').value.trim(),exames:$('#exames').value.trim(),restricoes:$('#restricoes').value.trim(),expectativas:$('#expectativas').value.trim()};const out=await api('submitQuestionnaire',{session:state.session,answers,consent:$('#consent').checked});state.user.questionStatus='Enviado';$('#questionStatus').textContent='Enviado';$('#progressBar').style.width='100%';view('successView')}catch(err){alertBox('#formAlert',err.message)}finally{$('#submitBtn').disabled=false}};
+  window.addEventListener('load',boot);
+  </script>
+</body>
+</html>

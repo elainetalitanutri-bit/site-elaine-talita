@@ -1,0 +1,6 @@
+.claude/
+.clasp.json
+apps-script-mapa-saude/
+tmp/
+*.docx
+*.pdf

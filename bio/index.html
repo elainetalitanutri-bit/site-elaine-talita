@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elaine Talita | Link na Bio</title>
+<meta name="description" content="Nutrição integrativa e individualizada com Elaine Talita. Conheça o Mapa da Saúde, o Protocolo NS, o Plano de Acompanhamento e a Assinatura de Suporte em Grupo.">
+<link rel="canonical" href="https://elainetalitanutri-bit.github.io/site-elaine-talita/bio/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Elaine Talita | Nutri Quântica">
+<meta property="og:description" content="Nutrição integrativa e individualizada. Não é a receita pronta, é o seu olhar sobre a sua saúde.">
+<meta property="og:url" content="https://elainetalitanutri-bit.github.io/site-elaine-talita/bio/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Alex+Brush&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Elaine Talita",
+    "jobTitle": "Nutricionista",
+    "sameAs": ["https://www.instagram.com/nutriquanticaelainetalita"]
+  }
+}
+</script>
+<style>
+:root{
+  --bg:#F1EDE6;
+  --bg2:#E8E1D5;
+  --card:#FFFDFA;
+  --card2:#F7F3EC;
+  --olive:#6A7052;
+  --olive-dk:#565C42;
+  --terracotta:#C46A3C;
+  --gold:#C6A76A;
+  --rose:#D8CFC3;
+  --ink:#332F27;
+  --ink-soft:#4B4738;
+  --dark:#211F19;
+  --success:#3C9258;
+  --serif:'Playfair Display',serif;
+  --script:'Alex Brush',cursive;
+  --sans:'Montserrat',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:var(--sans);
+  background:var(--bg);
+  color:var(--ink);
+  min-height:100vh;
+  display:flex;justify-content:center;
+  font-weight:400;
+  line-height:1.65;
+  position:relative;
+  overflow-x:hidden;
+}
+a{text-decoration:none;color:inherit;}
+img{max-width:100%;display:block;}
+
+/* ambient blobs */
+.blob{position:fixed;border-radius:50%;filter:blur(60px);opacity:.35;z-index:0;animation:drift 18s ease-in-out infinite;}
+.b1{width:340px;height:340px;background:var(--gold);top:-100px;left:-120px;}
+.b2{width:280px;height:280px;background:var(--olive);bottom:10%;right:-100px;animation-delay:-6s;}
+.b3{width:220px;height:220px;background:var(--terracotta);bottom:-100px;left:10%;animation-delay:-11s;}
+@keyframes drift{0%,100%{transform:translate(0,0);}50%{transform:translate(24px,-30px);}}
+
+.page{width:100%;max-width:480px;position:relative;z-index:1;padding:36px 20px 60px;}
+@media(min-width:600px){.page{max-width:560px;}}
+
+.eyebrow{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--terracotta);}
+.fu{opacity:0;transform:translateY(22px);transition:opacity .8s cubic-bezier(.16,.84,.44,1),transform .8s cubic-bezier(.16,.84,.44,1);}
+.fu.v{opacity:1;transform:translateY(0);}
+
+/* hero */
+.hero{text-align:center;padding:10px 0 30px;}
+.hero-el{opacity:0;transform:translateY(26px) scale(.9);transition:opacity .85s cubic-bezier(.34,1.56,.64,1),transform .85s cubic-bezier(.34,1.56,.64,1);}
+.hero.go .hero-el{opacity:1;transform:translateY(0) scale(1);}
+.hero.go .avatar-wrap{transition-delay:.05s;}
+.hero.go .name{transition-delay:.22s;}
+.hero.go .sub{transition-delay:.34s;}
+.hero.go .bio{transition-delay:.44s;}
+.hero.go .pills{transition-delay:.56s;}
+.avatar-wrap{position:relative;width:112px;height:112px;margin:0 auto 20px;}
+.avatar-halo{
+  position:absolute;inset:-26px;border-radius:50%;
+  background:radial-gradient(circle, rgba(198,167,106,.5), transparent 70%);
+  filter:blur(4px);animation:haloPulse 2.6s ease-in-out infinite;z-index:0;
+}
+@keyframes haloPulse{0%,100%{transform:scale(1);opacity:.55;}50%{transform:scale(1.3);opacity:1;}}
+.orbit{position:absolute;inset:-34px;pointer-events:none;z-index:1;}
+.orbit i{position:absolute;top:50%;left:50%;width:7px;height:7px;margin:-3.5px 0 0 -3.5px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px 2px rgba(198,167,106,.8);}
+.orbit i:nth-child(1){animation:orbit1 5s linear infinite;}
+.orbit i:nth-child(2){animation:orbit2 7s linear infinite reverse;background:var(--terracotta);box-shadow:0 0 10px 2px rgba(196,106,60,.7);}
+.orbit i:nth-child(3){animation:orbit3 4.2s linear infinite;background:var(--olive);box-shadow:0 0 10px 2px rgba(106,112,82,.7);}
+@keyframes orbit1{from{transform:rotate(0deg) translateX(90px) rotate(0deg);}to{transform:rotate(360deg) translateX(90px) rotate(-360deg);}}
+@keyframes orbit2{from{transform:rotate(0deg) translateX(78px) rotate(0deg);}to{transform:rotate(360deg) translateX(78px) rotate(-360deg);}}
+@keyframes orbit3{from{transform:rotate(0deg) translateX(100px) rotate(0deg);}to{transform:rotate(360deg) translateX(100px) rotate(-360deg);}}
+.avatar-ring{
+  position:absolute;inset:-6px;border-radius:50%;
+  background:conic-gradient(from 0deg, var(--gold), var(--terracotta), var(--olive), var(--gold));
+  animation:spin 6s linear infinite;z-index:1;
+}
+@keyframes spin{to{transform:rotate(360deg);}}
+.avatar{
+  position:absolute;inset:0;border-radius:50%;background:var(--olive-dk);
+  display:flex;align-items:center;justify-content:center;
+  border:4px solid var(--bg);z-index:2;
+}
+.avatar svg{width:56%;height:56%;}
+.badge{
+  position:absolute;bottom:2px;right:2px;width:28px;height:28px;border-radius:50%;
+  background:var(--gold);border:3px solid var(--bg);display:flex;align-items:center;justify-content:center;
+  font-size:.7rem;color:#fff;z-index:3;animation:badgePop .5s cubic-bezier(.34,1.56,.64,1) 1s backwards;
+}
+@keyframes badgePop{from{transform:scale(0) rotate(-30deg);}to{transform:scale(1) rotate(0);}}
+.hero .name{
+  font-family:var(--script);font-size:2.6rem;line-height:1;margin:6px 0 2px;
+  background:linear-gradient(100deg, var(--olive-dk) 38%, var(--gold) 50%, var(--olive-dk) 62%);
+  background-size:220% auto;-webkit-background-clip:text;background-clip:text;color:transparent;
+  animation:shimmer 3.8s ease-in-out infinite;
+}
+@keyframes shimmer{0%{background-position:200% center;}100%{background-position:-200% center;}}
+.hero .sub{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--terracotta);margin-bottom:16px;}
+.hero .bio{font-size:.96rem;color:var(--ink-soft);max-width:340px;margin:0 auto;}
+
+.pills{display:flex;gap:10px;justify-content:center;margin-top:24px;flex-wrap:wrap;}
+.pill{transition:transform .3s cubic-bezier(.16,.84,.44,1);}
+.pill:hover{transform:translateY(-4px) scale(1.04);}
+.pill{
+  background:var(--card);border:1px solid var(--rose);border-radius:16px;padding:12px 16px;text-align:center;min-width:96px;
+  box-shadow:0 10px 24px -16px rgba(51,47,39,.3);
+}
+.pill b{font-family:var(--serif);font-size:1.3rem;color:var(--terracotta);display:block;}
+.pill span{font-size:.62rem;letter-spacing:.03em;color:var(--ink-soft);display:block;margin-top:2px;}
+
+/* ticker */
+.ticker-wrap{background:var(--dark);overflow:hidden;padding:10px 0;border-radius:12px;margin:30px 0;}
+.ticker{display:flex;white-space:nowrap;animation:tck 26s linear infinite;width:max-content;}
+.ticker span{font-family:var(--serif);font-style:italic;font-size:.82rem;color:var(--rose);padding:0 20px;position:relative;}
+.ticker span::after{content:'✦';position:absolute;right:-3px;color:var(--gold);font-style:normal;font-size:.6rem;}
+@keyframes tck{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+/* section title */
+.stitle{display:flex;align-items:center;gap:10px;margin:34px 0 16px;}
+.stitle .ic{font-size:1rem;}
+.stitle h2{font-family:var(--serif);font-size:1.15rem;font-weight:600;}
+
+/* quiz card */
+.quiz-card{
+  background:var(--card);border-radius:22px;padding:26px 24px;box-shadow:0 24px 50px -30px rgba(51,47,39,.35);border:1px solid var(--rose);
+  position:relative;overflow:hidden;
+}
+.quiz-step{display:none;}
+.quiz-step.active{display:block;animation:fadein .5s ease;}
+@keyframes fadein{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);}}
+.quiz-card h3{font-family:var(--serif);font-size:1.3rem;margin-bottom:10px;}
+.quiz-card p{font-size:.93rem;color:var(--ink-soft);margin-bottom:18px;}
+.quiz-benefits{list-style:none;margin-bottom:20px;}
+.quiz-benefits li{font-size:.85rem;padding:8px 0 8px 26px;position:relative;color:var(--ink);}
+.quiz-benefits li::before{content:'✓';position:absolute;left:0;color:var(--success);font-weight:700;}
+.qopt{
+  display:block;width:100%;text-align:left;padding:14px 16px;margin-bottom:10px;border-radius:14px;
+  border:1px solid var(--rose);background:var(--card2);font-family:var(--sans);font-size:.88rem;color:var(--ink);
+  cursor:pointer;transition:.25s;
+}
+.qopt:hover{border-color:var(--terracotta);background:var(--bg2);}
+.qopt-other{border-style:dashed;color:var(--ink-soft);font-style:italic;}
+.other-box{display:none;margin:-2px 0 14px;}
+.other-box.open{display:block;}
+.other-box textarea{
+  width:100%;min-height:84px;border-radius:14px;border:1px solid var(--rose);background:var(--card2);
+  font-family:var(--sans);font-size:.88rem;color:var(--ink);padding:12px 14px;margin-bottom:10px;resize:vertical;
+}
+.qinput{
+  display:block;width:100%;padding:14px 16px;margin-bottom:12px;border-radius:14px;
+  border:1px solid var(--rose);background:var(--card2);font-family:var(--sans);font-size:.9rem;color:var(--ink);
+}
+.qinput:focus{outline:none;border-color:var(--terracotta);}
+.progress{height:4px;background:var(--rose);border-radius:4px;margin-bottom:22px;overflow:hidden;}
+.progress i{display:block;height:100%;background:var(--terracotta);width:0%;transition:.4s;}
+.result-box{
+  background:var(--card2);border-radius:16px;padding:16px 18px;margin:0 0 12px;border-left:3px solid var(--gold);
+}
+.result-box.result-alt{border-left-color:var(--olive);}
+.result-box.result-service{border-left-color:var(--terracotta);background:linear-gradient(160deg,#FBF6EA,var(--card2));}
+.result-label{font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);font-weight:700;display:block;margin-bottom:6px;}
+.result-box b{font-family:var(--serif);font-size:1.02rem;color:var(--olive-dk);display:block;margin-bottom:4px;font-weight:600;}
+.result-box span:not(.result-label){font-size:.87rem;color:var(--ink-soft);}
+
+/* buttons */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;width:100%;
+  padding:14px 20px;border-radius:50px;font-size:.82rem;letter-spacing:.03em;font-weight:600;
+  transition:.3s;cursor:pointer;border:none;text-transform:none;
+}
+.btn-dark{background:var(--dark);color:#fff;}
+.btn-dark:hover{background:var(--terracotta);}
+.btn-line{background:transparent;border:1px solid var(--ink-soft);color:var(--ink);}
+.btn-line:hover{background:var(--ink);color:#fff;}
+.btn-wa{background:#25D366;color:#fff;}
+.btn-wa:hover{background:#1fb057;}
+.btn-ghost{background:none;color:var(--ink-soft);font-size:.76rem;text-decoration:underline;padding:8px;}
+
+/* service carousel */
+.carousel{position:relative;padding:0 6px;}
+.car-viewport{overflow:hidden;border-radius:22px;}
+.car-track{display:flex;transition:transform .65s cubic-bezier(.16,.84,.44,1);}
+.car-slide{flex:0 0 100%;padding:4px;box-sizing:border-box;}
+.serv-card{
+  background:var(--card);border-radius:18px;padding:28px 24px;border:1px solid var(--rose);
+  box-shadow:0 20px 44px -28px rgba(51,47,39,.4);
+  transition:transform .5s cubic-bezier(.16,.84,.44,1),box-shadow .5s;
+  transform:scale(.94);opacity:.5;
+}
+.car-slide.active .serv-card{transform:scale(1);opacity:1;box-shadow:0 26px 54px -26px rgba(51,47,39,.5);}
+.serv-card.mid{border-color:var(--gold);background:linear-gradient(160deg,#FBF6EA,var(--card));}
+.serv-card .tag{
+  display:inline-block;font-size:.62rem;letter-spacing:.06em;text-transform:uppercase;font-weight:700;
+  padding:5px 12px;border-radius:50px;margin-bottom:10px;
+  opacity:0;transform:translateY(10px);transition:opacity .5s .15s,transform .5s .15s;
+}
+.car-slide.active .serv-card .tag{opacity:1;transform:translateY(0);}
+.serv-card.entry .tag{background:rgba(106,112,82,.18);color:var(--olive-dk);}
+.serv-card.mid .tag{background:var(--gold);color:#fff;}
+.serv-card.top .tag{background:rgba(196,106,60,.18);color:var(--terracotta);}
+.serv-card h3{font-family:var(--serif);font-size:1.35rem;margin-bottom:4px;}
+.serv-card .price{font-size:.88rem;color:var(--ink-soft);margin-bottom:14px;}
+.serv-card .price b{color:var(--terracotta);}
+.serv-card ul{list-style:none;margin-bottom:18px;}
+.serv-card li{font-size:.9rem;color:var(--ink-soft);padding:6px 0 6px 20px;position:relative;}
+.serv-card li::before{content:'—';position:absolute;left:0;color:var(--gold);}
+.car-nav{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:18px;}
+.car-arrow{
+  width:38px;height:38px;border-radius:50%;background:var(--card);border:1px solid var(--rose);
+  display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:var(--ink);cursor:pointer;
+  transition:.3s;flex-shrink:0;
+}
+.car-arrow:hover{background:var(--dark);color:#fff;border-color:var(--dark);}
+.car-dots{display:flex;gap:8px;}
+.car-dots i{width:7px;height:7px;border-radius:50%;background:var(--rose);transition:.35s;cursor:pointer;}
+.car-dots i.active{width:22px;border-radius:5px;background:var(--terracotta);}
+
+/* social grid */
+.social-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.social-card{
+  background:var(--card);border:1px solid var(--rose);border-radius:16px;padding:18px;display:flex;align-items:center;gap:12px;
+  transition:.3s;
+}
+.social-card:hover{transform:translateY(-3px);box-shadow:0 16px 30px -20px rgba(51,47,39,.4);}
+.social-ic{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.social-card span{font-size:.82rem;font-weight:500;}
+
+/* whatsapp cta */
+.wa-card{
+  background:linear-gradient(155deg,#25D366,#1fb057);border-radius:20px;padding:26px 24px;color:#fff;margin-top:10px;
+  display:flex;flex-direction:column;gap:14px;
+}
+.wa-card .row{display:flex;align-items:center;gap:14px;}
+.wa-card .ic{width:44px;height:44px;background:rgba(255,255,255,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.wa-card h3{font-family:var(--serif);font-size:1.15rem;}
+.wa-card p{font-size:.84rem;opacity:.92;}
+.wa-card .btn{background:#fff;color:#1fb057;}
+
+footer{text-align:center;margin-top:44px;padding-top:24px;border-top:1px solid var(--rose);}
+footer .name{font-family:var(--script);font-size:1.6rem;color:var(--olive-dk);}
+footer p{font-size:.72rem;color:var(--ink-soft);margin-top:8px;}
+</style>
+</head>
+<body>
+<div class="blob b1"></div>
+<div class="blob b2"></div>
+<div class="blob b3"></div>
+
+<div class="page">
+
+  <div class="hero" id="heroBio">
+    <div class="avatar-wrap hero-el">
+      <div class="avatar-halo"></div>
+      <div class="orbit"><i></i><i></i><i></i></div>
+      <div class="avatar-ring"></div>
+      <div class="avatar">
+        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M24 42V26" stroke="#F1EDE6" stroke-width="2" stroke-linecap="round"/>
+          <path d="M24 30C24 30 12 27 12 16C12 8 18 5 24 5C30 5 36 8 36 16C36 27 24 30 24 30Z" stroke="#C6A76A" stroke-width="1.6"/>
+          <circle cx="17" cy="12" r="2.2" fill="#C6A76A"/>
+          <circle cx="31" cy="12" r="2.2" fill="#C6A76A"/>
+        </svg>
+      </div>
+      <div class="badge">✓</div>
+    </div>
+    <div class="name hero-el">Elaine Talita</div>
+    <div class="sub hero-el">Nutri Quântica · Nutrição Integrativa</div>
+    <p class="bio hero-el">"Não é a receita pronta. É o seu olhar sobre a sua saúde." 15 anos de experiência com atendimento 100% individualizado.</p>
+    <div class="pills hero-el">
+      <div class="pill"><b>15+</b><span>anos formada</span></div>
+      <div class="pill"><b>100%</b><span>individualizado</span></div>
+      <div class="pill"><b>PR</b><span>+ online</span></div>
+    </div>
+  </div>
+
+  <div class="ticker-wrap fu">
+    <div class="ticker" id="ticker"></div>
+  </div>
+
+  <div class="stitle fu"><span class="ic">🌱</span><h2>Diagnóstico gratuito</h2></div>
+  <div class="quiz-card fu" id="quizCard">
+
+    <div class="quiz-step active" data-step="hook">
+      <h3>Qual é o seu ponto de partida hoje?</h3>
+      <p>Responda algumas perguntas rápidas e receba, na hora, um direcionamento personalizado — sem enrolação, sem lista de alimentos genérica.</p>
+      <ul class="quiz-benefits">
+        <li>Leitura inicial gratuita e sem compromisso</li>
+        <li>Indicação do melhor primeiro passo para o seu caso</li>
+        <li>Resultado personalizado exibido na hora</li>
+      </ul>
+      <button class="btn btn-dark" onclick="goStep('lead')">Começar diagnóstico</button>
+    </div>
+
+    <div class="quiz-step" data-step="lead">
+      <h3>Antes de começar</h3>
+      <p>É só pra eu te chamar pelo nome, mostrar seu resultado e permitir que a Elaine continue o atendimento com você.</p>
+      <input class="qinput" id="leadName" type="text" placeholder="Seu nome" autocomplete="name">
+      <input class="qinput" id="leadWhats" type="tel" placeholder="Seu WhatsApp (com DDD)" autocomplete="tel">
+      <input class="qinput" id="leadEmail" type="email" placeholder="Seu e-mail" autocomplete="email">
+      <button class="btn btn-dark" onclick="submitLead()">Quero meu diagnóstico</button>
+      <p style="font-size:.72rem;margin:12px 0 0;opacity:.75;">Ao continuar, você concorda com o uso destes dados para receber seu direcionamento e contato da Elaine, conforme nossos <a href="../direitos-reservados.html#privacidade" style="text-decoration:underline;">termos de privacidade</a>.</p>
+      <button class="btn btn-ghost" onclick="goStep('hook')">← Voltar</button>
+    </div>
+
+    <div class="quiz-step" data-step="q1">
+      <div class="progress"><i style="width:33%"></i></div>
+      <h3>O que mais te incomoda hoje?</h3>
+      <button class="qopt" onclick="answer('foco','peso')">O peso não sai do lugar, mesmo fazendo tudo certo</button>
+      <button class="qopt" onclick="answer('foco','cronico')">Tenho uma condição de saúde para tratar (ex: diabetes)</button>
+      <button class="qopt" onclick="answer('foco','emocional')">Como muito por ansiedade / compulsão</button>
+      <button class="qopt" onclick="answer('foco','geral')">Quero melhorar minha saúde de forma geral</button>
+      <button class="qopt qopt-other" onclick="openOther('foco')">Outro — quero contar meu caso</button>
+      <div class="other-box" id="other-foco">
+        <textarea id="otherText-foco" placeholder="Conte com suas palavras o que está acontecendo..."></textarea>
+        <button class="btn btn-dark" onclick="answerOther('foco')">Continuar</button>
+      </div>
+      <button class="btn btn-ghost" onclick="goStep('lead')">← Voltar</button>
+    </div>
+
+    <div class="quiz-step" data-step="q2">
+      <div class="progress"><i style="width:66%"></i></div>
+      <h3>Você já tentou seguir uma lista de alimentos pronta antes?</h3>
+      <button class="qopt" onclick="answer('historico','varias')">Já tentei várias e nenhuma se sustentou</button>
+      <button class="qopt" onclick="answer('historico','nenhuma')">Nunca fiz acompanhamento com nutricionista</button>
+      <button class="qopt" onclick="answer('historico','atual')">Estou em acompanhamento, mas quero mudar</button>
+      <button class="qopt qopt-other" onclick="openOther('historico')">Outro — quero contar meu caso</button>
+      <div class="other-box" id="other-historico">
+        <textarea id="otherText-historico" placeholder="Conte com suas palavras o que já tentou..."></textarea>
+        <button class="btn btn-dark" onclick="answerOther('historico')">Continuar</button>
+      </div>
+      <button class="btn btn-ghost" onclick="goStep('q1')">← Voltar</button>
+    </div>
+
+    <div class="quiz-step" data-step="q3">
+      <div class="progress"><i style="width:100%"></i></div>
+      <h3>Como prefere começar?</h3>
+      <button class="qopt" onclick="answer('ritmo','leve')">Quero primeiro entender melhor, sem compromisso</button>
+      <button class="qopt" onclick="answer('ritmo','pronta')">Já quero agendar minha primeira consulta</button>
+      <button class="qopt qopt-other" onclick="openOther('ritmo')">Outro — quero contar meu caso</button>
+      <div class="other-box" id="other-ritmo">
+        <textarea id="otherText-ritmo" placeholder="Conte com suas palavras como prefere começar..."></textarea>
+        <button class="btn btn-dark" onclick="answerOther('ritmo')">Continuar</button>
+      </div>
+      <button class="btn btn-ghost" onclick="goStep('q2')">← Voltar</button>
+    </div>
+
+    <div class="quiz-step" data-step="result">
+      <h3 id="resTitle">Seu diagnóstico, <span id="resNomePessoa"></span></h3>
+      <div class="result-box">
+        <span class="result-label">O que identificamos</span>
+        <b id="resProblema"></b>
+      </div>
+      <div class="result-box result-alt">
+        <span class="result-label">O que costuma resolver isso</span>
+        <b id="resSolucao"></b>
+      </div>
+      <div class="result-box result-service">
+        <span class="result-label">Caminho indicado pra você</span>
+        <b id="resServico"></b>
+        <span id="resServicoDesc"></span>
+      </div>
+      <a class="btn btn-wa" id="resWa" target="_blank" rel="noopener">Falar com a Elaine no WhatsApp</a>
+      <button class="btn btn-ghost" onclick="goStep('hook')">Refazer diagnóstico</button>
+    </div>
+
+  </div>
+
+  <div class="stitle fu"><span class="ic">🌿</span><h2>Como caminhar comigo</h2></div>
+  <div class="carousel fu" id="servCarousel">
+    <div class="car-viewport">
+      <div class="car-track" id="carTrack">
+        <div class="car-slide active">
+          <div class="serv-card entry">
+            <span class="tag">Ponto de partida</span>
+            <h3>Mapa da Saúde</h3>
+            <div class="price"><b>R$ 127</b></div>
+            <ul>
+              <li>Questionário sobre o que você está sentindo agora</li>
+              <li>Análise clara: o que pode estar acontecendo e por onde começar</li>
+              <li>20 min exclusivos com a Elaine sobre o seu resultado</li>
+            </ul>
+            <a href="https://wa.me/554199299591?text=Oi%20Elaine!%20Quero%20fazer%20o%20Mapa%20da%20Sa%C3%BAde." class="btn btn-line" target="_blank" rel="noopener">Quero meu Mapa</a>
+          </div>
+        </div>
+        <div class="car-slide">
+          <div class="serv-card mid">
+            <span class="tag">Mais procurado</span>
+            <h3>Protocolo NS</h3>
+            <div class="price">Nutrição e Saúde · <b>R$ 497</b></div>
+            <ul>
+              <li>Etapa 1 — Conhecer: rotina, histórico e exames quando fizer sentido</li>
+              <li>Etapa 2 — Direcionar: estratégia individual, sem fórmula pronta</li>
+            </ul>
+            <a href="https://wa.me/554199299591?text=Oi%20Elaine!%20Quero%20saber%20mais%20sobre%20o%20Protocolo%20NS." class="btn btn-dark" target="_blank" rel="noopener">Iniciar o Protocolo NS</a>
+          </div>
+        </div>
+        <div class="car-slide">
+          <div class="serv-card top">
+            <span class="tag">Carro-chefe</span>
+            <h3>Plano de Acompanhamento</h3>
+            <div class="price">Consultas <b>quinzenais</b></div>
+            <ul>
+              <li>Onde a transformação de verdade acontece</li>
+              <li>Ajustes constantes conforme sua evolução</li>
+            </ul>
+            <a href="https://wa.me/554199299591?text=Oi%20Elaine!%20Quero%20saber%20mais%20sobre%20o%20Plano%20de%20Acompanhamento." class="btn btn-line" target="_blank" rel="noopener">Falar com a Elaine</a>
+          </div>
+        </div>
+        <div class="car-slide">
+          <div class="serv-card entry">
+            <span class="tag">Continuidade</span>
+            <h3>Assinatura de Suporte em Grupo</h3>
+            <div class="price"><b>R$ 67</b>/mês</div>
+            <ul>
+              <li>Grupo exclusivo para enviar dúvidas do dia a dia</li>
+              <li>A Elaine responde no grupo e todas aproveitam as orientações</li>
+              <li>Precisou de nova investigação? Vira crédito pro Protocolo NS</li>
+            </ul>
+            <a href="https://wa.me/554199299591?text=Oi%20Elaine!%20Quero%20saber%20mais%20sobre%20a%20Assinatura%20de%20Suporte%20em%20Grupo." class="btn btn-line" target="_blank" rel="noopener">Quero o Suporte em Grupo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="car-nav">
+      <div class="car-arrow" id="carPrev">‹</div>
+      <div class="car-dots" id="carDots"><i class="active"></i><i></i><i></i><i></i></div>
+      <div class="car-arrow" id="carNext">›</div>
+    </div>
+  </div>
+
+  <div class="stitle fu"><span class="ic">📲</span><h2>Redes e contato</h2></div>
+  <div class="social-grid fu">
+    <a class="social-card" href="https://www.instagram.com/nutriquanticaelainetalita" target="_blank" rel="noopener">
+      <div class="social-ic" style="background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M12 2c2.7 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.22.6 1.77 1.15.5.5.84 1.02 1.15 1.77.25.64.42 1.37.47 2.43.05 1.06.06 1.42.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.77c-.5.5-1.02.84-1.77 1.15-.64.25-1.37.42-2.43.47-1.06.05-1.42.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.7 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.22 1.15-1.77A4.9 4.9 0 0 1 5.45 2.53c.64-.25 1.37-.42 2.43-.47C8.94 2.01 9.3 2 12 2Zm0 1.8c-2.65 0-2.98.01-4.02.06-.87.04-1.34.18-1.65.3-.42.16-.71.35-1.02.66-.31.31-.5.6-.66 1.02-.12.31-.26.78-.3 1.65C4.31 8.72 4.3 9.05 4.3 11.7v.6c0 2.65.01 2.98.06 4.02.04.87.18 1.34.3 1.65.16.42.35.71.66 1.02.31.31.6.5 1.02.66.31.12.78.26 1.65.3 1.04.05 1.37.06 4.02.06s2.98-.01 4.02-.06c.87-.04 1.34-.18 1.65-.3.42-.16.71-.35 1.02-.66.31-.31.5-.6.66-1.02.12-.31.26-.78.3-1.65.05-1.04.06-1.37.06-4.02s-.01-2.98-.06-4.02c-.04-.87-.18-1.34-.3-1.65a2.7 2.7 0 0 0-.66-1.02 2.7 2.7 0 0 0-1.02-.66c-.31-.12-.78-.26-1.65-.3C14.98 3.81 14.65 3.8 12 3.8Zm0 3.2a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4Zm5.2-2a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0Z"/></svg>
+      </div>
+      <span>Instagram</span>
+    </a>
+    <a class="social-card" href="https://wa.me/554199299591?text=Oi%20Elaine!%20Vim%20pelo%20link%20na%20bio." target="_blank" rel="noopener">
+      <div class="social-ic" style="background:#25D366;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.85.5 3.58 1.36 5.06L2 22l5.2-1.44a9.85 9.85 0 0 0 4.84 1.27h.01c5.46 0 9.9-4.45 9.9-9.92C21.96 6.46 17.5 2 12.04 2Z"/></svg>
+      </div>
+      <span>WhatsApp</span>
+    </a>
+    <a class="social-card" href="mailto:elainetalitanutri@gmail.com">
+      <div class="social-ic" style="background:var(--olive);">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6Zm2 0 8 6 8-6"/></svg>
+      </div>
+      <span>E-mail</span>
+    </a>
+    <a class="social-card" href="tel:+5541992999591">
+      <div class="social-ic" style="background:var(--terracotta);">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11 11 0 0 0 3.5.56 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.2.2 2.4.56 3.5a1 1 0 0 1-.25 1L6.6 10.8Z"/></svg>
+      </div>
+      <span>Ligar</span>
+    </a>
+  </div>
+
+  <div class="wa-card fu">
+    <div class="row">
+      <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.85.5 3.58 1.36 5.06L2 22l5.2-1.44a9.85 9.85 0 0 0 4.84 1.27h.01c5.46 0 9.9-4.45 9.9-9.92C21.96 6.46 17.5 2 12.04 2Z"/></svg></div>
+      <div>
+        <h3>Fale direto comigo</h3>
+        <p>Tire suas dúvidas ou agende sua consulta pelo WhatsApp.</p>
+      </div>
+    </div>
+    <a class="btn" href="https://wa.me/554199299591?text=Oi%20Elaine!%20Vim%20pelo%20link%20na%20bio%20e%20quero%20agendar%20uma%20consulta." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+  </div>
+
+  <footer>
+    <div class="name">Elaine Talita</div>
+    <p>© <span id="year"></span> Elaine Talita — Nutrição Integrativa · Litoral do Paraná + Online<br><a href="../direitos-reservados.html" style="color:var(--terracotta);text-decoration:underline;">Todos os direitos reservados</a></p>
+  </footer>
+
+</div>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// hero entrance — impossible to miss on load
+setTimeout(()=> document.getElementById('heroBio').classList.add('go'), 150);
+
+// ticker
+const words = ['NUTRIÇÃO INTEGRATIVA','LEITURA INDIVIDUAL','CUIDADO HOLÍSTICO','15 ANOS DE EXPERIÊNCIA','SAÚDE ANTES DO PESO'];
+document.getElementById('ticker').innerHTML = [...words,...words,...words].map(w=>`<span>${w}</span>`).join('');
+
+// reveal
+const obs = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('v'); obs.unobserve(e.target); } });
+},{threshold:.1});
+document.querySelectorAll('.fu').forEach(el=>obs.observe(el));
+
+// service carousel
+(function(){
+  const track = document.getElementById('carTrack');
+  const slides = Array.from(track.children);
+  const dots = Array.from(document.getElementById('carDots').children);
+  const prevBtn = document.getElementById('carPrev');
+  const nextBtn = document.getElementById('carNext');
+  let idx = 0, timer;
+
+  function render(){
+    track.style.transform = `translateX(-${idx*100}%)`;
+    slides.forEach((s,i)=> s.classList.toggle('active', i===idx));
+    dots.forEach((d,i)=> d.classList.toggle('active', i===idx));
+  }
+  function go(i){ idx = (i+slides.length)%slides.length; render(); restart(); }
+  function next(){ go(idx+1); }
+  function prev(){ go(idx-1); }
+  function restart(){ clearInterval(timer); timer = setInterval(next, 5000); }
+
+  nextBtn.addEventListener('click', next);
+  prevBtn.addEventListener('click', prev);
+  dots.forEach((d,i)=> d.addEventListener('click', ()=> go(i)));
+
+  let startX = null;
+  track.addEventListener('touchstart', e=>{ startX = e.touches[0].clientX; }, {passive:true});
+  track.addEventListener('touchend', e=>{
+    if(startX===null) return;
+    const dx = e.changedTouches[0].clientX - startX;
+    if(dx > 40) prev(); else if(dx < -40) next();
+    startX = null;
+  });
+
+  render();
+  restart();
+})();
+
+// quiz logic (client-side only for now — will be wired to a spreadsheet/backend later)
+const LEADS_ENDPOINT = 'https://script.google.com/macros/s/AKfycbxiOXY2hrwV7sDgNV-M9sO_ViOVWHbTzVTXFDUA36ybG05C0W45TlrphRmZEpZkYxMS/exec';
+const answers = {};
+const lead = {name:'', whats:'', email:''};
+let leadSaved = false;
+
+function goStep(step){
+  document.querySelectorAll('.quiz-step').forEach(s=>s.classList.remove('active'));
+  document.querySelector(`.quiz-step[data-step="${step}"]`).classList.add('active');
+}
+
+function submitLead(){
+  const name = document.getElementById('leadName').value.trim();
+  const whats = document.getElementById('leadWhats').value.trim();
+  const email = document.getElementById('leadEmail').value.trim();
+  if(!name || !whats || !email){
+    alert('Preenche nome, WhatsApp e e-mail pra eu poder te enviar o diagnóstico certinho :)');
+    return;
+  }
+  lead.name = name;
+  lead.whats = whats;
+  lead.email = email;
+  goStep('q1');
+}
+
+function openOther(key){
+  document.getElementById('other-'+key).classList.add('open');
+}
+
+function answerOther(key){
+  const val = document.getElementById('otherText-'+key).value.trim();
+  if(!val){ return; }
+  answers[key] = val;
+  answers[key+'_isOther'] = true;
+  advance(key);
+}
+
+function answer(key,val){
+  answers[key] = val;
+  answers[key+'_isOther'] = false;
+  advance(key);
+}
+
+function advance(key){
+  if(key==='foco') goStep('q2');
+  else if(key==='historico') goStep('q3');
+  else if(key==='ritmo') showResult();
+}
+
+const FOCO_LABEL = {peso:'o peso parado',cronico:'uma condição de saúde',emocional:'compulsão/ansiedade',geral:'saúde geral'};
+const FOCO_INFO = {
+  peso: {problema:'O ponteiro da balança não sai do lugar, mesmo fazendo tudo "certo".', solucao:'Isso raramente é falta de força de vontade — geralmente é a causa por trás do travamento que ainda não foi investigada. Uma leitura individual substitui qualquer lista de alimentos genérica.'},
+  cronico: {problema:'Existe uma condição de saúde pedindo cuidado contínuo, não uma solução pontual.', solucao:'O caminho começa com uma investigação completa — exames e histórico — para montar uma estratégia sob medida para o seu quadro.'},
+  emocional: {problema:'A vontade de comer parece maior do que a fome — e isso mexe também com o emocional.', solucao:'Tratar só o prato não resolve. O cuidado precisa unir corpo e emocional, entendendo o que está por trás da compulsão.'},
+  geral: {problema:'Você sente que pode estar mais saudável, mas ainda não sabe por onde começar.', solucao:'Uma leitura holística inicial — corpo, rotina e emocional — mostra com clareza qual é o seu próximo passo.'}
+};
+const FOCO_INFO_OTHER = {problema:'Cada história tem suas particularidades — e a sua merece uma leitura própria, não um modelo pronto.', solucao:'Com base no que você contou, o próximo passo é conversar diretamente com a Elaine para entender o caminho certo pro seu caso.'};
+
+const SERVICES = {
+  mapa: {nome:'Mapa da Saúde', desc:'uma leitura inicial clara e sem compromisso — questionário estruturado, análise do que pode estar acontecendo e 20 minutos exclusivos com a Elaine para entender o próximo passo.'},
+  protocolo: {nome:'Protocolo NS (Nutrição e Saúde)', desc:'2 encontros para investigar a causa com exames e montar a sua estratégia individual — o ponto de partida mais indicado agora.'},
+  acompanhamento: {nome:'Plano de Acompanhamento', desc:'consultas quinzenais, com cuidado próximo e contínuo — ideal quando existe uma condição de saúde para tratar de perto.'},
+  assinatura: {nome:'Assinatura de Suporte em Grupo', desc:'grupo exclusivo para dúvidas e ajustes do dia a dia. A Elaine responde no grupo e todas aproveitam as orientações compartilhadas.'}
+};
+
+function pickService(){
+  if(answers.foco === 'cronico') return SERVICES.acompanhamento;
+  if(answers.ritmo === 'leve') return SERVICES.mapa;
+  return SERVICES.protocolo;
+}
+
+function saveLead(service){
+  if(leadSaved) return;
+  leadSaved = true;
+  const payload = {
+    name: lead.name,
+    whats: lead.whats,
+    email: lead.email,
+    foco: answers.foco || '',
+    focoIsOther: !!answers.foco_isOther,
+    historico: answers.historico || '',
+    historicoIsOther: !!answers.historico_isOther,
+    ritmo: answers.ritmo || '',
+    ritmoIsOther: !!answers.ritmo_isOther,
+    service: service.nome,
+    source: 'Link da bio'
+  };
+  fetch(LEADS_ENDPOINT, {
+    method: 'POST',
+    mode: 'no-cors',
+    keepalive: true,
+    headers: {'Content-Type':'text/plain;charset=utf-8'},
+    body: JSON.stringify(payload)
+  }).catch(()=>{ leadSaved = false; });
+}
+
+function showResult(){
+  const info = answers.foco_isOther ? FOCO_INFO_OTHER : (FOCO_INFO[answers.foco] || FOCO_INFO.geral);
+  const service = pickService();
+  const firstName = (lead.name||'').split(' ')[0] || '';
+
+  document.getElementById('resNomePessoa').textContent = firstName;
+  document.getElementById('resProblema').textContent = info.problema;
+  document.getElementById('resSolucao').textContent = info.solucao;
+  document.getElementById('resServico').textContent = service.nome;
+  document.getElementById('resServicoDesc').textContent = service.desc;
+
+  const focoTxt = answers.foco_isOther ? answers.foco : (FOCO_LABEL[answers.foco] || answers.foco || '');
+  const historicoTxt = answers.historico_isOther ? answers.historico : (answers.historico || '');
+  const ritmoTxt = answers.ritmo_isOther ? answers.ritmo : (answers.ritmo==='pronta' ? 'agendar minha primeira consulta' : 'entender melhor antes de agendar');
+
+  const msg = `Oi Elaine! Sou ${lead.name||''} e fiz o diagnóstico no link da bio.\nMeu foco principal é: ${focoTxt}.\nJá tentei: ${historicoTxt}.\nQuero: ${ritmoTxt}.\nO resultado indicou: ${service.nome}.`;
+  document.getElementById('resWa').href = 'https://wa.me/554199299591?text=' + encodeURIComponent(msg);
+  saveLead(service);
+  goStep('result');
+}
+</script>
+</body>
+</html>

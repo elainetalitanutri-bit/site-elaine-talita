@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Direitos Reservados | Elaine Talita</title>
+<meta name="robots" content="noindex, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Alex+Brush&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --olive:#6A7052;
+  --olive-dk:#565C42;
+  --terracotta:#C46A3C;
+  --cream:#F1EDE6;
+  --cream2:#E8E1D5;
+  --rose:#D8CFC3;
+  --gold:#C6A76A;
+  --ink:#2A2620;
+  --ink-soft:#4B4738;
+  --dark:#211F19;
+  --white:#FFFDFA;
+  --serif:'Playfair Display',serif;
+  --script:'Alex Brush',cursive;
+  --sans:'Montserrat',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:var(--sans);background:var(--cream);color:var(--ink);
+  font-weight:400;line-height:1.75;overflow-x:hidden;
+}
+a{color:inherit;}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px;}
+
+/* header */
+header{
+  position:relative;padding:120px 0 90px;text-align:center;overflow:hidden;
+  background:
+    radial-gradient(circle at 80% 10%, rgba(198,167,106,.3), transparent 55%),
+    radial-gradient(circle at 15% 90%, rgba(106,112,82,.2), transparent 50%),
+    var(--dark);
+  color:var(--cream);
+}
+header .blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.35;animation:drift 16s ease-in-out infinite;}
+header .b1{width:380px;height:380px;background:var(--gold);top:-140px;left:-100px;}
+header .b2{width:280px;height:280px;background:var(--terracotta);bottom:-140px;right:-60px;animation-delay:-8s;}
+@keyframes drift{0%,100%{transform:translate(0,0);}50%{transform:translate(20px,-24px);}}
+header .in{position:relative;z-index:2;}
+.back-link{
+  display:inline-flex;align-items:center;gap:8px;font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--rose);margin-bottom:40px;transition:.3s;
+}
+.back-link:hover{color:var(--gold);}
+.logo-text{font-family:var(--script);font-size:2.4rem;color:var(--cream);}
+.logo-sub{font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-top:2px;margin-bottom:26px;}
+header h1{font-family:var(--serif);font-weight:600;font-size:clamp(2rem,4.4vw,3rem);margin-bottom:14px;}
+header p.sub{color:var(--rose);font-size:.98rem;max-width:480px;margin:0 auto;}
+
+/* content */
+main{padding:80px 0 60px;}
+.toc{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:60px;
+}
+.toc a{
+  background:var(--white);border:1px solid var(--rose);border-radius:12px;padding:14px 18px;font-size:.84rem;font-weight:500;
+  transition:.3s;display:flex;align-items:center;gap:10px;
+}
+.toc a:hover{border-color:var(--terracotta);background:var(--cream2);transform:translateX(4px);}
+.toc a span{color:var(--gold);font-family:var(--serif);font-style:italic;font-size:.9rem;}
+
+.sec{margin-bottom:56px;scroll-margin-top:40px;}
+.sec .num{font-family:var(--serif);font-style:italic;color:var(--gold);font-size:1rem;}
+.sec h2{font-family:var(--serif);font-weight:600;font-size:1.5rem;margin:8px 0 18px;position:relative;padding-bottom:14px;}
+.sec h2::after{content:'';position:absolute;left:0;bottom:0;width:44px;height:2px;background:var(--terracotta);}
+.sec p{color:var(--ink-soft);font-size:.98rem;margin-bottom:14px;}
+.sec ul{margin:0 0 14px 20px;color:var(--ink-soft);font-size:.98rem;}
+.sec li{margin-bottom:8px;}
+.sec strong{color:var(--ink);font-weight:600;}
+
+.callout{
+  background:var(--white);border-left:3px solid var(--gold);border-radius:0 14px 14px 0;padding:22px 26px;margin:26px 0;
+  box-shadow:0 20px 40px -30px rgba(51,47,39,.3);
+}
+.callout p{margin:0;color:var(--ink);font-size:.94rem;}
+
+.updated{
+  text-align:center;font-size:.8rem;color:var(--ink-soft);margin-top:70px;padding-top:26px;border-top:1px solid var(--rose);
+}
+
+footer{background:var(--dark);color:var(--rose);text-align:center;padding:44px 24px;}
+footer .name{font-family:var(--script);font-size:1.6rem;color:var(--cream);display:block;margin-bottom:10px;}
+footer a.cta{
+  display:inline-block;margin-top:18px;padding:12px 26px;border-radius:50px;background:var(--gold);color:var(--dark);
+  font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;transition:.3s;
+}
+footer a.cta:hover{background:var(--terracotta);color:#fff;}
+footer p{font-size:.74rem;color:#8C8879;margin-top:26px;}
+
+@media(max-width:640px){
+  .toc{grid-template-columns:1fr;}
+  header{padding:90px 0 70px;}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="wrap in">
+    <a href="index.html" class="back-link">← Voltar ao site</a>
+    <div class="logo-text">Elaine Talita</div>
+    <div class="logo-sub">nutri quântica</div>
+    <h1>Direitos Reservados &amp; Termos de Uso</h1>
+    <p class="sub">Este documento explica como o conteúdo deste site pode ser usado, como cuidamos das suas informações e quais são os direitos autorais envolvidos.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <nav class="toc">
+    <a href="#autorais"><span>01</span> Direitos autorais</a>
+    <a href="#uso"><span>02</span> Uso do conteúdo</a>
+    <a href="#privacidade"><span>03</span> Privacidade e dados</a>
+    <a href="#profissional"><span>04</span> Natureza do conteúdo</a>
+    <a href="#links"><span>05</span> Links externos</a>
+    <a href="#contato"><span>06</span> Contato</a>
+  </nav>
+
+  <div class="sec" id="autorais">
+    <div class="num">01</div>
+    <h2>Direitos autorais</h2>
+    <p>Todo o conteúdo publicado neste site — textos, identidade visual, paleta de cores, fotografias, ilustrações e demais elementos gráficos — pertence a <strong>Elaine Talita</strong> e é protegido pela legislação brasileira de direitos autorais (Lei nº 9.610/1998).</p>
+    <p>A reprodução, distribuição ou uso comercial de qualquer material deste site sem autorização prévia e por escrito não é permitida.</p>
+  </div>
+
+  <div class="sec" id="uso">
+    <div class="num">02</div>
+    <h2>Uso do conteúdo</h2>
+    <p>Você pode navegar, ler e compartilhar links deste site livremente. O que não é permitido, sem autorização:</p>
+    <ul>
+      <li>Copiar textos ou imagens para uso em outro site, perfil ou material comercial;</li>
+      <li>Reproduzir a identidade visual (logotipo, cores, tipografia) da marca Elaine Talita;</li>
+      <li>Utilizar o conteúdo deste site para treinar modelos de inteligência artificial ou fins automatizados sem consentimento.</li>
+    </ul>
+  </div>
+
+  <div class="sec" id="privacidade">
+    <div class="num">03</div>
+    <h2>Privacidade e dados</h2>
+    <p>Respeitamos a sua privacidade e seguimos os princípios da Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018). Ao entrar em contato pelo WhatsApp, e-mail ou formulários deste site, você compartilha apenas os dados que decide informar, usados exclusivamente para responder ao seu contato e prestar o atendimento nutricional solicitado.</p>
+    <p>Não vendemos, alugamos ou compartilhamos seus dados pessoais com terceiros para fins de marketing.</p>
+    <div class="callout">
+      <p>Quer solicitar a exclusão dos seus dados ou tirar dúvidas sobre como eles são usados? Fale diretamente com a Elaine pelos canais de contato abaixo.</p>
+    </div>
+  </div>
+
+  <div class="sec" id="profissional">
+    <div class="num">04</div>
+    <h2>Natureza do conteúdo</h2>
+    <p>As informações apresentadas neste site têm caráter <strong>educativo e informativo</strong> sobre o trabalho de Elaine Talita, nutricionista. Nenhum conteúdo aqui substitui uma consulta individual, diagnóstico ou prescrição nutricional — que só podem ser feitos após avaliação presencial ou online com a profissional.</p>
+    <p>Em conformidade com o Código de Ética do Nutricionista (CFN), este site não promete resultados específicos de emagrecimento nem utiliza imagens de "antes e depois" de pacientes.</p>
+  </div>
+
+  <div class="sec" id="links">
+    <div class="num">05</div>
+    <h2>Links externos</h2>
+    <p>Este site pode conter links para redes sociais e serviços de terceiros (Instagram, WhatsApp, e-mail). Esses ambientes têm suas próprias políticas de privacidade, sobre as quais não temos controle.</p>
+  </div>
+
+  <div class="sec" id="contato">
+    <div class="num">06</div>
+    <h2>Contato</h2>
+    <p>Dúvidas sobre estes termos podem ser enviadas diretamente para:</p>
+    <ul>
+      <li><strong>E-mail:</strong> elainetalitanutri@gmail.com</li>
+      <li><strong>WhatsApp:</strong> +55 41 99299-9591</li>
+    </ul>
+  </div>
+
+  <div class="updated">Última atualização: agosto de 2026</div>
+
+</main>
+
+<footer>
+  <span class="name">Elaine Talita</span>
+  <span>Nutrição Integrativa · Litoral do Paraná + Online</span>
+  <br>
+  <a href="index.html" class="cta">Voltar ao site</a>
+  <p>© <span id="year"></span> Elaine Talita — Nutrição Integrativa. Todos os direitos reservados.</p>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://elainetalitanutri-bit.github.io/site-elaine-talita/sitemap.xml
