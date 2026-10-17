@@ -65,6 +65,8 @@
     .status { display:none; margin-top:16px; border-radius:12px; padding:13px 14px; font-size:13px; line-height:1.45; }
     .status.ok { display:block; background:#e9efe2; color:#3c4b31; }
     .status.error { display:block; background:#f7e7e1; color:#7f3829; }
+    .group-link { display:none; margin-top:14px; border-radius:13px; padding:16px 20px; text-align:center; text-decoration:none; background:#1f9d55; color:white; font-size:13px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; box-shadow:0 12px 26px rgba(31,157,85,.22); }
+    .group-link.is-visible { display:block; }
     .chapter { background:var(--ink); color:#f6f1e7; position:relative; overflow:hidden; }
     .chapter::after { content:"ANTES"; position:absolute; right:-20px; bottom:-70px; color:rgba(255,255,255,.035); font-family:"Playfair Display",serif; font-size:250px; font-weight:700; transform:translateX(var(--scroll-shift,0px)); }
     .chapter::before { content:""; position:absolute; inset:-30% -20%; background:conic-gradient(from 210deg at 50% 50%,transparent 0 35%,rgba(202,170,106,.12) 41%,transparent 48% 100%); animation:slowLens 16s linear infinite; }
@@ -132,6 +134,7 @@
           <button id="submitButton" type="submit">Quero participar da masterclass</button>
           <div class="safe">Seus dados serão usados somente para esta inscrição e comunicações relacionadas.</div>
           <div class="status" id="status" role="status" aria-live="polite"></div>
+          <a class="group-link" id="groupLink" href="#" rel="noopener">Entrar no grupo da masterclass</a>
         </form>
       </aside>
     </section>
@@ -163,11 +166,23 @@
 
   <script>
     const ENDPOINT = 'https://script.google.com/macros/s/AKfycbxiOXY2hrwV7sDgNV-M9sO_ViOVWHbTzVTXFDUA36ybG05C0W45TlrphRmZEpZkYxMS/exec';
+    const WHATSAPP_GROUP_URL = '';
     const form = document.getElementById('leadForm');
     const phone = document.getElementById('phone');
     const button = document.getElementById('submitButton');
     const statusBox = document.getElementById('status');
+    const groupLink = document.getElementById('groupLink');
     const qs = new URLSearchParams(location.search);
+    const UTM_KEYS = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'];
+    const defaults = { utm_source:'direto', utm_medium:'nao-informado', utm_campaign:'black-friday-2026', utm_content:'acesso-direto', utm_term:'' };
+    const currentUtm = {};
+    UTM_KEYS.forEach(key => currentUtm[key] = (qs.get(key) || defaults[key] || '').trim());
+    try {
+      const saved = JSON.parse(localStorage.getItem('elaineMasterclassFirstTouch') || 'null');
+      if (!saved) localStorage.setItem('elaineMasterclassFirstTouch', JSON.stringify({ ...currentUtm, landingPage:location.href, referrer:document.referrer, capturedAt:new Date().toISOString() }));
+    } catch (error) {}
+    const newLeadId = () => 'MC-' + Date.now().toString(36).toUpperCase() + '-' + Math.random().toString(36).slice(2,7).toUpperCase();
+    let lastLead = null;
     document.getElementById('year').textContent = new Date().getFullYear();
 
     const title = document.querySelector('h1');
@@ -233,28 +248,40 @@
       button.disabled = true;
       button.textContent = 'Confirmando sua vaga...';
       const payload = {
-        action: 'masterclassSignup', destination: 'Leads quentes', sheetName: 'Leads quentes',
+        action: 'masterclassSignup', destination: 'Masterclass', sheetName: 'Masterclass', id: newLeadId(),
         name: document.getElementById('name').value.trim(), email: document.getElementById('email').value.trim().toLowerCase(),
-        phone: phone.value.trim(), whats: phone.value.trim(), origin: 'Instagram', source: 'Masterclass Instagram',
-        partner: qs.get('utm_source') || 'instagram', utmSource: qs.get('utm_source') || 'instagram',
-        utmMedium: qs.get('utm_medium') || 'organico', utmCampaign: qs.get('utm_campaign') || 'black-elaine-2026',
-        utmContent: qs.get('utm_content') || '', utmTerm: qs.get('utm_term') || '', consent: 'Sim',
-        page: 'Masterclass Antes da Dieta', createdAt: new Date().toISOString()
+        phone: phone.value.trim(), whats: phone.value.trim(), origin: currentUtm.utm_source, source: 'Masterclass Antes da Dieta',
+        partner: currentUtm.utm_source, utmSource: currentUtm.utm_source, utmMedium: currentUtm.utm_medium,
+        utmCampaign: currentUtm.utm_campaign, utmContent: currentUtm.utm_content, utmTerm: currentUtm.utm_term,
+        consent: 'Sim', page: 'Masterclass Antes da Dieta', landingPage: location.href,
+        referrer: document.referrer || 'Acesso direto', createdAt: new Date().toISOString()
       };
       try {
         await fetch(ENDPOINT, { method:'POST', mode:'no-cors', headers:{'Content-Type':'text/plain;charset=utf-8'}, body:JSON.stringify(payload) });
+        lastLead = { id:payload.id, email:payload.email };
+        try { localStorage.setItem('elaineMasterclassLastLead', JSON.stringify(lastLead)); } catch (error) {}
         form.reset();
         statusBox.textContent = 'Inscrição recebida! Em breve você receberá os detalhes da masterclass no WhatsApp e no e-mail.';
         statusBox.className = 'status ok';
         button.textContent = 'Vaga reservada';
         if (typeof fbq === 'function') fbq('track','Lead');
-        if (typeof gtag === 'function') gtag('event','generate_lead',{event_category:'masterclass',event_label:'antes_da_dieta'});
+        if (typeof gtag === 'function') gtag('event','generate_lead',{event_category:'masterclass',event_label:currentUtm.utm_content});
+        if (WHATSAPP_GROUP_URL) { groupLink.href = WHATSAPP_GROUP_URL; groupLink.classList.add('is-visible'); }
       } catch (error) {
         statusBox.textContent = 'Não foi possível confirmar agora. Verifique sua conexão e tente novamente.';
         statusBox.className = 'status error';
         button.disabled = false;
         button.textContent = 'Quero participar da masterclass';
       }
+    });
+
+    groupLink.addEventListener('click', () => {
+      if (!WHATSAPP_GROUP_URL) return;
+      try { if (!lastLead) lastLead = JSON.parse(localStorage.getItem('elaineMasterclassLastLead') || 'null'); } catch (error) {}
+      const clickPayload = { action:'masterclassGroupClick', id:lastLead && lastLead.id, email:lastLead && lastLead.email, ...currentUtm, clickedAt:new Date().toISOString() };
+      fetch(ENDPOINT, { method:'POST', mode:'no-cors', keepalive:true, headers:{'Content-Type':'text/plain;charset=utf-8'}, body:JSON.stringify(clickPayload) }).catch(() => {});
+      if (typeof fbq === 'function') fbq('trackCustom','JoinWhatsAppGroup',{utm_content:currentUtm.utm_content});
+      if (typeof gtag === 'function') gtag('event','join_group',{event_category:'masterclass',event_label:currentUtm.utm_content});
     });
   </script>
 </body>
