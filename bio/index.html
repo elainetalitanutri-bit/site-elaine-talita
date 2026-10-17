@@ -681,8 +681,10 @@ function showResult(){
   const msg = `Oi Elaine! Sou ${lead.name||''} e fiz o diagnóstico no link da bio.\nMeu foco principal é: ${focoTxt}.\nJá tentei: ${historicoTxt}.\nQuero: ${ritmoTxt}.\nO resultado indicou: ${service.nome}.`;
   document.getElementById('resWa').href = 'https://wa.me/5541992999591?text=' + encodeURIComponent(msg);
   saveLead(service);
+  if (typeof window.elaineTrack === 'function') window.elaineTrack('generate_lead',{form_name:'diagnostico_link_bio',service_name:service.nome},'Lead');
   goStep('result');
 }
 </script>
+<script src="../assets/js/tracking.js"></script>
 </body>
 </html>

@@ -1,8 +1,18 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1096467230030872');
+    fbq('track', 'PageView');
+  </script>
+  <!-- End Meta Pixel Code -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T8X6L3XE3Q"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-T8X6L3XE3Q');</script>
   <title>Masterclass Antes da Dieta | Elaine Talita</title>
   <meta name="description" content="Masterclass gratuita com Elaine Talita: entenda o que o seu corpo está tentando dizer antes de começar outra dieta.">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -264,8 +274,7 @@
         statusBox.textContent = 'Inscrição recebida! Em breve você receberá os detalhes da masterclass no WhatsApp e no e-mail.';
         statusBox.className = 'status ok';
         button.textContent = 'Vaga reservada';
-        if (typeof fbq === 'function') fbq('track','Lead');
-        if (typeof gtag === 'function') gtag('event','generate_lead',{event_category:'masterclass',event_label:currentUtm.utm_content});
+        if (typeof window.elaineTrack === 'function') window.elaineTrack('generate_lead',{form_name:'masterclass',event_label:currentUtm.utm_content},'Lead');
         if (WHATSAPP_GROUP_URL) { groupLink.href = WHATSAPP_GROUP_URL; groupLink.classList.add('is-visible'); }
       } catch (error) {
         statusBox.textContent = 'Não foi possível confirmar agora. Verifique sua conexão e tente novamente.';
@@ -280,9 +289,9 @@
       try { if (!lastLead) lastLead = JSON.parse(localStorage.getItem('elaineMasterclassLastLead') || 'null'); } catch (error) {}
       const clickPayload = { action:'masterclassGroupClick', id:lastLead && lastLead.id, email:lastLead && lastLead.email, ...currentUtm, clickedAt:new Date().toISOString() };
       fetch(ENDPOINT, { method:'POST', mode:'no-cors', keepalive:true, headers:{'Content-Type':'text/plain;charset=utf-8'}, body:JSON.stringify(clickPayload) }).catch(() => {});
-      if (typeof fbq === 'function') fbq('trackCustom','JoinWhatsAppGroup',{utm_content:currentUtm.utm_content});
-      if (typeof gtag === 'function') gtag('event','join_group',{event_category:'masterclass',event_label:currentUtm.utm_content});
+      if (typeof window.elaineTrack === 'function') window.elaineTrack('join_group',{event_category:'masterclass',event_label:currentUtm.utm_content},'JoinWhatsAppGroup');
     });
   </script>
+  <script src="../assets/js/tracking.js"></script>
 </body>
 </html>
